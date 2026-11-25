@@ -1,0 +1,124 @@
+.notice.void-cf7-guidant-promo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    padding: 18px 48px 18px 18px;
+    margin: 15px 0;
+    background: #fff9f4;
+    border: 1px solid #fcd9bf;
+    border-left: 4px solid #f26a1b;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(242, 106, 27, 0.08);
+}
+
+.void-cf7-guidant-promo__image {
+    flex: 0 0 340px;
+    max-width: 340px;
+}
+
+.void-cf7-guidant-promo__image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.void-cf7-guidant-promo__content {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.void-cf7-guidant-promo__content h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #0f1b3d;
+}
+
+.void-cf7-guidant-promo__content p {
+    margin: 0 0 18px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #3c434a;
+    max-width: 680px;
+}
+
+.void-cf7-guidant-promo__actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.void-cf7-guidant-promo .button.void-cf7-guidant-promo__button {
+    background: #f26a1b;
+    border-color: #f26a1b;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 2.6;
+    min-height: 40px;
+    padding: 0 22px;
+    border-radius: 4px;
+}
+
+.void-cf7-guidant-promo .button.void-cf7-guidant-promo__button:hover,
+.void-cf7-guidant-promo .button.void-cf7-guidant-promo__button:focus {
+    background: #d95509;
+    border-color: #d95509;
+    color: #fff;
+    box-shadow: none;
+}
+
+/* Watermark-like link: barely visible until hovered. */
+.void-cf7-guidant-promo__never {
+    font-size: 12px;
+    color: rgba(60, 67, 74, 0.25);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.void-cf7-guidant-promo__never:hover,
+.void-cf7-guidant-promo__never:focus {
+    color: #3c434a;
+    text-decoration: underline;
+    box-shadow: none;
+}
+
+.void-cf7-guidant-promo__close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 4px;
+    border: 0;
+    background: none;
+    color: #8c8f94;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.void-cf7-guidant-promo__close .dashicons {
+    font-size: 22px;
+    width: 22px;
+    height: 22px;
+}
+
+.void-cf7-guidant-promo__close:hover,
+.void-cf7-guidant-promo__close:focus {
+    color: #d63638;
+}
+
+@media (max-width: 960px) {
+    .notice.void-cf7-guidant-promo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .void-cf7-guidant-promo__image {
+        flex-basis: auto;
+        max-width: 100%;
+        width: 100%;
+    }
+}

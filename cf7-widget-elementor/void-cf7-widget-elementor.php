@@ -3,22 +3,27 @@
 /**
  * Plugin Name: Void Contact Form 7 Widget For Elementor Page Builder
  * Description: Adds Contact Form 7 widget element to Elementor page builder for easy drag & drop the created contact forms with Contact Form 7
- * Version:     2.4.3
+ * Version:     2.4.4
  * Author:      voidCoders
  * Plugin URI:  https://voidcoders.com/product/contact-form7-widget-for-elementor-free/
  * Author URI:  https://voidcoders.com
  * Text Domain: void
- * Elementor tested up to: 4.0
- * Elementor Pro tested up to: 4.0
+ * Elementor tested up to: 4.4.1
+ * Elementor Pro tested up to: 4.4.1
  */
 
 use Account\AccountDataFactory;
 
 if (!defined('ABSPATH')) exit; // Exit if accessed directly
 
-define('CF7_WIDGET_E_VERSION', '2.4.3');
+define('CF7_WIDGET_E_VERSION', '2.4.4');
 define('CF7_WIDGET_E_PLUGIN_URL', trailingslashit(plugin_dir_url(__FILE__)));
 define('CF7_WIDGET_E_PLUGIN_DIR', trailingslashit(plugin_dir_path(__FILE__)));
+
+// WP Guidant promotional banner (shown when WooCommerce is installed).
+if (is_admin()) {
+    require_once CF7_WIDGET_E_PLUGIN_DIR . 'helper/wp-guidant-promo.php';
+}
 
 function void_cf7_widget()
 {
